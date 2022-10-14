@@ -1,0 +1,28 @@
+/*Faça um programa que peça ao usuario para digitar 10 valores e some-os.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int contador = 1, soma= 0 , valor;
+	
+	while(contador<=10){
+		printf("Digite um valor:");
+		scanf("%d", &valor);
+		soma = soma + valor;
+		contador++;
+	}	
+	printf("Soma dos valores: %d\n", soma);
+	
+	//ou
+	
+	int contador2 = 1, soma2 = 0, valor2;
+	
+	for(contador2; contador2 <=10; contador2++){
+		printf("Digite um valor:");
+		scanf("%d", &valor2);
+		soma2 = soma2 + valor2;
+	}
+		printf("Soma dos valores: %d\n", soma2);
+	return 0;
+}
