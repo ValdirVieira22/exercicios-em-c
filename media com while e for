@@ -1,0 +1,47 @@
+/*Faça um programa que leia 10 inteiros e imprima sua media.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int contador= 1, valor, media= 0;
+	
+	while(contador <=10){
+		scanf("%d", &valor);
+		media = (media + valor);
+		if(contador == 10){ media = media / contador;
+		}
+		contador++;
+	}
+	
+	printf("%d\n", media);
+	
+	//ou
+	
+	int contador2= 1, valor2, media2= 0;
+	
+	for(contador2; contador2 <=10; contador2++){
+		scanf("%d", &valor2);
+		media2 = (media2 + valor2);
+		if(contador2 == 10){ media2 = media2 / contador2;
+		}		
+	}
+	printf("%d\n", media2);
+	
+	//ou
+	
+	int contador3= 1, valor3, media3= 0;
+	
+	while(contador3 <=10){
+		scanf("%d", &valor3);
+		media3 = (media3 + valor3);
+		contador3++;
+	}
+	contador3--;
+	
+	media3 = media3 / contador3;
+	
+	printf("%d\n", media3);
+	
+	return 0;
+}
