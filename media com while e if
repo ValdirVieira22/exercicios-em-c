@@ -1,0 +1,36 @@
+/*Faça um programa que leia 10 inteiros positivos, ignorando nao positivos, e imprima sua
+media*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int valor= 0, media, contador= 1;
+	
+	while(contador <=10){
+		scanf("%d", &valor);
+		if(valor > 0){
+			media = media +valor;
+			contador++;
+		}
+	}
+	contador--;
+	media = media/contador;
+	printf("%d\n", media);
+	
+	//ou
+	
+	int valor2= 0, media2, contador2= 1;
+	
+	for(contador2;contador2<=10; contador2++){
+		scanf("%d", &valor2);
+		if(valor2 > 0){
+			media2 = media2 +valor2;
+		}
+		else{contador2--;
+		}
+	}
+	contador2--;
+	media2 = media2/contador2;
+	printf("%d\n", media2);
+}
